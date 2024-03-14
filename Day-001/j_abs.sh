@@ -1,7 +1,15 @@
 #!/bin/bash
-#
-$num = "$#"
 
-if [num -lt 0];
-then
-    return 
+# Define the function
+j_abs()
+{
+    local num="$1"
+    # Set first argument to num variable
+
+    if ((num < 0));
+    then
+	echo $((-num))
+    else
+	echo $num
+    fi
+}
