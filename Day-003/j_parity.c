@@ -30,7 +30,7 @@ void j_parity_i(int num_i)
 
 void j_parity_f(int num_f)
 {
-	if (j_abs_i(num_f) % 2 == 0)
+	if (j_abs_f(num_f) % 2 == 0)
 	{
 		printf("%d is an even number.\n", num_f);
 	}
